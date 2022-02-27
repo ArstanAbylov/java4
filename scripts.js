@@ -18,6 +18,30 @@ document.querySelector('input[type="text"]')
         alert('Changed');
     });
 
+document.querySelector('input[type="text"]')
+    .addEventListener('change', function() {
+        if (this.checked) {
+            alert('You are emploed');
+        } else {
+            alert('You are unempled');
+        }
+    });
+
+// document.querySelector('select')
+//     .addEventListener('input', function() {
+//         if (this.value) {
+
+//         }
+//     });
+
+document.querySelector('#example')
+    .addEventListener('click', function() {
+        this.className = "bad";
+    });
+document.querySelector('#example')
+    .addEventListener('dblclick', function() {
+        this.className = "good";
+    });
 
 // 1. Attach changed to checkbox
-// 2. If value is true output "You are emplaed" if false "You are unempled"
+// 2. If value is true output "You are emploed" if false "You are unempled"

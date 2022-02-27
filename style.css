@@ -1,0 +1,13 @@
+#example {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+.good {
+    border-radius: 50%;
+}
+
+.bad {
+    transform: scale(50px);
+}
